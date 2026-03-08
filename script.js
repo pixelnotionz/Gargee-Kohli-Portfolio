@@ -1,7 +1,7 @@
 
-/* ══════════════════════════════════════
+/* 
    INTRO ANIMATION SEQUENCE
-══════════════════════════════════════ */
+ */
 (function () {
 
   const urlParams = new URLSearchParams(window.location.search);
@@ -68,9 +68,9 @@
 
 })();
 
-/* ══════════════════════════════════════
+/* 
    SCROLL REVEAL
-══════════════════════════════════════ */
+ */
 (function () {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -84,9 +84,9 @@
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 })();
 
-/* ══════════════════════════════════════
+/* 
    SMOOTH NAV ACTIVE STATE
-══════════════════════════════════════ */
+ */
 (function () {
   const sections = document.querySelectorAll('section[id]');
   const links    = document.querySelectorAll('.nav-links a');

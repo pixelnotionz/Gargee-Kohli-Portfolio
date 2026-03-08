@@ -49,15 +49,7 @@ body {
   background:
     radial-gradient(ellipse 60% 80% at 55% 40%, rgba(30,20,18,0.3) 0%, transparent 70%),
     radial-gradient(ellipse 80% 100% at 50% 50%, #1e1209 0%, #0b0908 70%);
-  /* 
-    ╔═══════════════════════════════════════════════╗
-    ║  TO USE YOUR PHOTO AS HERO BACKGROUND:        ║
-    ║  Replace the background above with:           ║
-    ║  background: linear-gradient(rgba(0,0,0,0.72),║
-    ║    rgba(0,0,0,0.72)) , url('your-photo.jpg')  ║
-    ║    center/cover no-repeat;                    ║
-    ╚═══════════════════════════════════════════════╝
-  */
+ 
 }
 
 /* Faint photo-like texture overlay */
@@ -118,9 +110,9 @@ body {
   transition: opacity 0.7s ease 0.1s;
 }
 
-/* ══════════════════════════════════════
+/* 
    MAIN SITE
-══════════════════════════════════════ */
+ */
 #main {
   opacity: 0;
   transition: opacity 0.8s ease;
@@ -147,6 +139,17 @@ nav {
   text-decoration: none;
   letter-spacing: -0.01em;
 }
+.nav-brand{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.nav-figma{
+  font-family:'Jost', sans-serif;
+  font-weight:300;
+  font-size:0.95rem;
+  color:var(--cream);
+opacity:0.85;}
 
 .nav-links {
   display: flex;
@@ -175,9 +178,9 @@ nav {
 .nav-links a:hover { color: var(--cream); }
 .nav-links a:hover::after { width: 100%; }
 
-/* ══════════════════════════════════════
+/* 
    HOME SECTION
-══════════════════════════════════════ */
+ */
 #home {
   position: relative;
   min-height: 100vh;
@@ -195,14 +198,6 @@ nav {
   background:
     radial-gradient(ellipse 60% 80% at 55% 40%, rgba(30,20,18,0.3) 0%, transparent 70%),
     radial-gradient(ellipse 80% 100% at 50% 50%, #1e1209 0%, #0b0908 70%);
-  /*
-    ╔═══════════════════════════════════════════════╗
-    ║  REPLACE with your actual photo:              ║
-    ║  background: linear-gradient(rgba(0,0,0,0.7), ║
-    ║    rgba(0,0,0,0.7)), url('your-photo.jpg')    ║
-    ║    center/cover no-repeat;                    ║
-    ╚═══════════════════════════════════════════════╝
-  */
 }
 .home-hero-bg::after {
   content: '';
@@ -293,9 +288,9 @@ nav {
   transform: translateY(0);
 }
 
-/* ══════════════════════════════════════
+/* 
    SECTION SHARED STYLES
-══════════════════════════════════════ */
+ */
 section {
   min-height: 100vh;
   padding: 100px 60px 80px;
@@ -330,9 +325,9 @@ section {
 .section-heading .white { color: var(--cream); font-style: normal; }
 .section-heading .pink  { color: var(--rose);  font-style: italic; }
 
-/* ══════════════════════════════════════
+/* 
    ABOUT SECTION
-══════════════════════════════════════ */
+ */
 #about {
   background: #0b0908;
   display: flex;
@@ -397,13 +392,7 @@ section {
   background: linear-gradient(135deg, #2a1c18, #1a1210);
   overflow: hidden;
   position: relative;
-  /*
-    ╔══════════════════════════════════════╗
-    ║  Replace the background above with: ║
-    ║  background: url('about-photo.jpg') ║
-    ║    center/cover no-repeat;          ║
-    ╚══════════════════════════════════════╝
-  */
+ 
 }
 .about-photo-inner {
   width: 100%;
@@ -466,9 +455,9 @@ section {
   transform: translateX(-50%);
 }
 
-/* ══════════════════════════════════════
+/* 
    EDUCATION SECTION
-══════════════════════════════════════ */
+ */
 #education {
   background: #0b0908;
 }
@@ -573,9 +562,9 @@ section {
   letter-spacing: 0.05em;
 }
 
-/* ══════════════════════════════════════
+/* 
    EXPLORE / PORTFOLIOS SECTION
-══════════════════════════════════════ */
+ */
 #explore {
   background: #0b0908;
 }
@@ -681,9 +670,9 @@ section {
 .portfolio-card:hover .card-arrow { gap: 16px; }
 .portfolio-card:hover .card-arrow svg { transform: translateX(5px); }
 
-/* ══════════════════════════════════════
+/* 
    CONNECT SECTION
-══════════════════════════════════════ */
+ */
 #connect {
   background: var(--bg);
   display: flex;
@@ -825,9 +814,9 @@ footer {
   display: inline-block;
 }
 
-/* ══════════════════════════════════════
+/* 
    SCROLL REVEAL
-══════════════════════════════════════ */
+ */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -843,9 +832,9 @@ footer {
 .reveal-delay-4 { transition-delay: 0.4s; }
 .reveal-delay-5 { transition-delay: 0.5s; }
 
-/* ══════════════════════════════════════
+/* 
    RESPONSIVE
-══════════════════════════════════════ */
+ */
 @media (max-width: 768px) {
   nav { padding: 20px 24px; }
   .nav-links { gap: 24px; }
