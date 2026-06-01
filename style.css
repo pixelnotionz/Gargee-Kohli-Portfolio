@@ -491,11 +491,8 @@ section {
 }
 
 .timeline-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 50px;
-  position: relative;
-  gap: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .timeline-item.left  { flex-direction: row; }
 .timeline-item.right { flex-direction: row; }
@@ -520,7 +517,7 @@ section {
 }
 
 .timeline-card {
-  width: calc(50% - 36px);
+  width: calc(50% - 50px);
   background: var(--card);
   border: 1px solid rgba(196,144,138,0.12);
   border-radius: 12px;
@@ -532,10 +529,10 @@ section {
   transform: translateY(-3px);
 }
 
-.timeline-item.left  .timeline-card { margin-right: 36px; text-align: left; }
-.timeline-item.right .timeline-card { margin-left: 36px; text-align: left; }
+.timeline-item.left  .timeline-card { margin-right: 50px; text-align: left; }
+.timeline-item.right .timeline-card { margin-left: 50px; text-align: left; }
 
-.timeline-spacer { width: calc(50% - 36px); }
+.timeline-spacer { width: calc(50% - 50px); }
 
 .timeline-date {
   font-family: 'Jost', sans-serif;
