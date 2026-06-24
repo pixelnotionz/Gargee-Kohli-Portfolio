@@ -858,12 +858,68 @@ footer {
    RESPONSIVE
 ══════════════════════════════════════ */
 @media (max-width: 768px) {
-  nav { padding: 20px 24px; }
-  .nav-links { gap: 24px; }
+  nav {
+  padding: 15px 16px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-links {
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+}
+.logo-wrapper {
+  flex-direction: column;
+  gap: 2px;
+}
+
+.figma-text {
+  font-size: 0.7rem;
+}
+.home-name {
+  font-size: 4.5rem;
+  line-height: 0.95;
+}
+
+.home-tagline {
+  font-size: 1rem;
+}
+
+.home-portfolio-label {
+  font-size: 0.7rem;
+}
+.home-tags {
+  width: 100%;
+  padding: 0 20px;
+  gap: 10px;
+}
+
+.home-tag {
+  font-size: 0.8rem;
+  padding: 8px 16px;
+}
   section { padding: 80px 24px 60px; }
-  footer { flex-direction: column; gap: 10px; text-align: center; padding: 20px 24px; }
+ footer {
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  padding: 24px 16px;
+}
 
   .about-grid { grid-template-columns: 1fr; }
+  .about-headline {
+  font-size: 2rem;
+}
+
+.about-bio {
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
   .about-photo-wrap { order: -1; }
 
   .timeline::before { left: 20px; }
@@ -871,7 +927,28 @@ footer {
   .timeline-dot { left: 20px; top: 24px; transform: translateX(-50%); }
   .timeline-card { width: 100%; margin: 0 !important; text-align: left !important; }
   .timeline-spacer { display: none; }
+  .timeline-card {
+  padding: 20px;
+}
+.timeline-school {
+  font-size: 1.1rem;
+}
 
   .portfolio-cards { grid-template-columns: 1fr; }
+  .portfolio-card {
+  padding: 28px 24px;
+}
+
+.card-title {
+  font-size: 1.8rem;
+}
+.connect-headline {
+  font-size: 3.5rem;
+}
+
+.connect-link {
+  width: 100%;
+  justify-content: center;
+}
   .connect-links { flex-direction: column; align-items: center; }
 }
