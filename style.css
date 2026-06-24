@@ -147,6 +147,20 @@ nav {
   text-decoration: none;
   letter-spacing: -0.01em;
 }
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.figma-text {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    opacity: 0.85;
+}
 
 .nav-links {
   display: flex;
